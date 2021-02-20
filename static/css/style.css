@@ -1,0 +1,57 @@
+.side-bar
+{
+    background-color: rgba(15, 15, 15, 0.164);
+    height: 170vh;
+    text-align: left;
+    width: fit-content;    
+}
+
+.nav-link:hover
+{
+    background-color: rgba(219, 98, 122, 0.945);
+    color: white;
+    width: 226.8px;
+}
+
+.top_title , .quotes-title, .Author_title
+{
+    padding-top: 2vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', 'sans-serif';
+}
+
+#main-img
+{
+    width: 230px;
+    padding-left: 15px;
+}
+
+.quotes-section 
+{
+    background-color: lightblue;
+    height: 300px;
+    width: 350px;
+    overflow-y: auto;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.text2
+{
+    text-align: right;  
+    font-style: italic;
+}
+
+.Rel_title_1, .Rel_title_2, .Count_title, .Contact_title
+{
+    padding-top: 2vw;
+    /* text-align: center; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', 'sans-serif';
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+#Rating-img, #Review-img
+{
+    height: 500px;
+    padding-left: 200px;
+}

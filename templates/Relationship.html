@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+      <title>Visualization Dashboard </title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+      <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+  </head>
+<body>
+<!---Main Section---->
+  <div class="mainsectionp">
+    <div class="row">
+        <div class="col-md-2">  
+            <div class ="side-bar" id="sticky-sidebar">
+              <div class="sticky-top">
+                <nav class="nav flex-column">
+                    <a class="navbar-brand"><img id= "main-img" src="{{ url_for('static', filename='Images/Bestseller.png') }}", class = "img img-responsive", alt= "Bestseller"></a>
+                    <a class="nav-link" href="{{ url_for('welcome') }}">Home</a>
+                    <a class="nav-link" href="{{ url_for('relationship') }}">Relationship</a>
+                    <a class="nav-link" href="{{ url_for('counts') }}">Counts</a>
+                    <a class="nav-link" href="{{ url_for('authors') }}">Top authors</a>
+                    <a class="nav-link" target = "_blank" href= "https://github.com/Savita0807/Project-2-Amazon-bestselling-books">Github</a>
+                    <a class="nav-link" href="{{ url_for('contact') }}">Contact Us</a>
+                </nav>
+              </div>
+            </div>
+        </div>      
+        <div class="col-md-9">
+            <div class = "Temp-textbox">
+              <h3 class = "Rel_title_1"> Relationship between Price & User rating </h3>
+              <hr>
+              <div class= "Summary-textbox_1">
+                <img id= "Rating-img" src="{{ url_for('static', filename='Images/PriceVsUser_Rating.png') }}", class = "img img-responsive", alt= "Price vs Rating">
+                <p>
+                  The r-squared value for Price V/S User Rating: -0.13. <br>
+                  This R value shows weak correlation between price and user rating.
+                </p>
+              </div>
+              <h3 class = "Rel_title_1"> Relationship between Price & Review </h3>
+              <hr>
+              <div class= "Summary-textbox_2">
+                <img id= "Review-img" src="{{ url_for('static', filename='Images/PriceVsReviews.png') }}", class = "img img-responsive", alt= "Price vs Review">
+                <p>
+                  The r-squared value for Price V/S Review:-0.11. <br>  
+                  This R value also shows weak correlation between price and review.
+                </p>
+              </div>
+            </div>  
+        </div>        
+    </div>
+  </div>
+ 
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+</body>
+</html>

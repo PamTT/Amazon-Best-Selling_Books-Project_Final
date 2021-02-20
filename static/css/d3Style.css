@@ -1,0 +1,77 @@
+.aText {
+    font-family: sans-serif;
+    font-size: 16px;
+    text-anchor: middle;
+}
+
+.active {
+    font-weight: bold;
+    fill: #000;
+    transition: fill 0.3s ease-out;
+    text-anchor: middle;
+  }
+  
+.inactive {
+    font-weight: lighter;
+    fill: #c9c9c9;
+    transition: fill 0.3s ease-out;
+    text-anchor: middle;
+}
+  
+.inactive:hover {
+    fill: #000;
+    cursor: pointer;
+}
+
+.authorsActive
+{
+    font-weight: bold;
+    fill: #000;
+    transition: fill 0.3s ease-out;
+    text-anchor: middle;
+}
+
+.reviewActive
+{
+    font-weight: bold;
+    fill: green;
+    transition: fill 0.3s ease-out;
+    text-anchor: middle;
+}
+
+.priceActive
+{
+    font-weight: bold;
+    fill: orange;
+    transition: fill 0.3s ease-out;
+    text-anchor: middle;
+}
+
+.d3-tip {
+    padding: 6px;
+    font-size: 12px;
+    line-height: 1;
+    line-height: 1.5em;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 4px;
+  }
+
+.axis {
+    font: 14px sans-serif;
+}
+  
+.line {
+    fill: none;
+    stroke-width: 2px;
+}
+    
+.orange {
+    stroke: orange;
+}
+    
+.green {
+    stroke: green;
+}
